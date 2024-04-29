@@ -3,31 +3,68 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --neutral-1000: #131128;
+  --neutral-200: #e0dff1;
+  --white: white;
+  --primary-1: #6639e4;
+  --neutral-900: #282454;
+  --neutral-800: #53516c;
+  --neutral-700: #6b6888;
+  --neutral-600: #a09fb4;
+  --neutral-500: #7a73c4;
+  --neutral-400: #9c97d3;
+  --neutral-300: #bebbe2;
+  --neutral-100-1001: #f1f1f9;
+  --primary-2: #f66688;
+  --secondary-1: #dfdcff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body{
+  background-color: var(--neutral-1000);
+    color: var(--neutral-200);
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    line-height: 1.778em;
+}
+.section-container{
+  max-width: 1280px;
+  margin: auto;
+}
+.nav-links li{
+  color: var(--white);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.143em;
+  text-decoration: none;
+  transition:  0.3s all;
+  cursor: pointer;
+}
+.nav-links li:hover{
+  color: var(--primary-1);
+}
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.description{
+  color: var(--neutral-200);
+}
+.title{
+  color: var(--neutral-100-1001);
+}
+.btn{
+background-color: var(--primary-1);
+font-weight: 600;
+border-radius: 1.5rem;
+padding-inline: 14px;
+padding-block: 5px;
+transition: 0.3s;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.btn:hover{
+  background-color: var(--neutral-900);
 }
