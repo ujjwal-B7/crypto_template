@@ -26,8 +26,10 @@ const Nav = () => {
           <ul>
             <li>CART (0)</li>
           </ul>
-          <button className="btn md:block hidden">DOWNLOAD APP</button>
-          <div className="lg:hidden p-1 rounded-md bg-[#6639e4]">
+          <button className="btn px-4 py-2 md:block hidden">
+            DOWNLOAD APP
+          </button>
+          <div className="lg:hidden p-1 bg-[#6639e4]">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
