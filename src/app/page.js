@@ -846,7 +846,7 @@ export default function Home() {
             <CarouselContent className="md:w-[50%] mx-auto">
               {carousel.map((review, index) => (
                 <CarouselItem
-                  key={review.name}
+                  key={index}
                   className="primary-bg rounded-3xl md:ml-10 ml-5 md:px-10 md:py-12 px-2 py-8"
                 >
                   <p className="tracking-wide">{review.review}</p>
@@ -875,10 +875,10 @@ export default function Home() {
       <section className="section-container px-4 py-20">
         <h2 className="md:text-start text-center">Browse our latest news</h2>
         <div className="grid gap-10 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10">
-          {latestnews.map((news) => (
+          {latestnews.map((news,index) => (
             <Tilty>
               <div
-                key={news.title}
+                key={index}
                 className="cursor-pointer sm:w-full w-[90%] mx-auto primary-bg rounded-2xl relative"
                 data-aos="zoom-in"
               >
