@@ -53,7 +53,7 @@ export default function Home() {
         className="section-container text-center py-10 px-4 "
         data-aos="fade-up"
       >
-        <h3>CRYPTO APP HAS BEEN FEATURED ON</h3>
+        <h2>CRYPTO APP HAS BEEN FEATURED ON</h2>
         <div className="companies md:pt-10 pt-5 flex-wrap flex  justify-center lg:gap-10 gap-5">
           <span>
             <svg
@@ -630,6 +630,116 @@ export default function Home() {
               <p>256-bit secure encryption</p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="section-container px-4 flex-between md:flex-row flex-col gap-10">
+        <div className="md:w-[50%]">
+          <h2 data-aos="fade-up">Built on a robust and powerful platform</h2>
+          <p data-aos="fade-up">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non
+            neque orci amet, amet consectetur eget suspendisse in. Adipiscing
+            vitae dignissim facilisi ut.
+          </p>
+          <div className="space-y-4 mt-10" data-aos="fade-up">
+            <div className="flex gap-5 items-center">
+              <span className="rounded-xl secondary-bg p-2">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.4"
+                    d="M22.8492 0H8.34839C3.06406 0 0.0700684 2.99399 0.0700684 8.27832V22.7654C0.0700684 28.0497 3.06406 31.0437 8.34839 31.0437H22.8492C28.1336 31.0437 31.1138 28.0497 31.1138 22.7654V8.27832C31.1138 2.99399 28.1336 0 22.8492 0"
+                    fill="white"
+                  />
+                  <path
+                    d="M24.9976 14.8947V20.5381H19.3542"
+                    stroke="white"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M24.9976 20.5381L18.3601 13.9006C18.2436 13.7841 18.1054 13.6916 17.9532 13.6285C17.801 13.5655 17.6378 13.533 17.4731 13.533C17.3083 13.533 17.1452 13.5655 16.993 13.6285C16.8407 13.6916 16.7025 13.7841 16.586 13.9006L13.9708 16.5158C13.8543 16.6323 13.7161 16.7248 13.5639 16.7878C13.4117 16.8509 13.2485 16.8834 13.0838 16.8834C12.919 16.8834 12.7559 16.8509 12.6037 16.7878C12.4514 16.7248 12.3132 16.6323 12.1967 16.5158L6.18628 10.5054"
+                    stroke="white"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <p>100% Private data</p>
+            </div>
+            <div className="flex gap-5">
+              <span className="rounded-xl secondary-bg p-2">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 36 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="17.5917"
+                    cy="18.5217"
+                    r="17.5917"
+                    fill="white"
+                    fillOpacity="0.4"
+                  />
+                  <path
+                    d="M21.0348 7.65791C21.0348 7.21246 20.4962 6.98938 20.1813 7.30436L8.71102 18.7746C8.59059 18.8952 8.50859 19.0487 8.47539 19.2159C8.44218 19.383 8.45926 19.5563 8.52445 19.7137C8.58965 19.8712 8.70004 20.0058 8.84169 20.1005C8.98334 20.1953 9.14989 20.2459 9.32031 20.2461H13.6487C13.9248 20.2461 14.1487 20.47 14.1487 20.7461V29.3855C14.1487 29.8309 14.6872 30.054 15.0022 29.739L26.4725 18.2688C26.5929 18.1482 26.6749 17.9946 26.7081 17.8275C26.7413 17.6603 26.7242 17.4871 26.659 17.3296C26.5938 17.1722 26.4834 17.0376 26.3418 16.9428C26.2001 16.8481 26.0336 16.7974 25.8632 16.7973H21.5348C21.2587 16.7973 21.0348 16.5734 21.0348 16.2973V7.65791Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <p>99.99% Uptime guarantee</p>
+            </div>
+            <div className="flex gap-5">
+              <span className="rounded-xl secondary-bg p-2">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 25 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.70862 12.568V8.34884C6.70862 6.78227 7.32846 5.27986 8.43178 4.17213C9.5351 3.0644 11.0315 2.44208 12.5919 2.44208C14.1522 2.44208 15.6486 3.0644 16.7519 4.17213C17.8553 5.27986 18.4751 6.78227 18.4751 8.34884V12.568"
+                    stroke="#A388EF"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <rect
+                    x="0.425781"
+                    y="11.2656"
+                    width="24.3322"
+                    height="21.3356"
+                    rx="4"
+                    fill="white"
+                  />
+                  <path
+                    d="M12.5918 21.4763C12.6822 21.4763 12.7706 21.5031 12.8458 21.5533C12.9209 21.6035 12.9795 21.6749 13.0141 21.7584C13.0487 21.8419 13.0578 21.9338 13.0401 22.0225C13.0225 22.1112 12.979 22.1926 12.915 22.2565C12.8511 22.3204 12.7697 22.364 12.681 22.3816C12.5923 22.3992 12.5004 22.3902 12.4169 22.3556C12.3334 22.321 12.262 22.2624 12.2118 22.1873C12.1616 22.1121 12.1348 22.0237 12.1348 21.9333C12.1348 21.8121 12.1829 21.6958 12.2686 21.6101C12.3544 21.5244 12.4706 21.4763 12.5918 21.4763"
+                    stroke="#A388EF"
+                    strokeWidth="4.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <p>24/7 Dedicated support</p>
+            </div>
+          </div>
+        </div>
+        <div className="flex  md:w-[50%] relative" data-aos="zoom-in">
+          <img
+            className="object-contain "
+            src="/assets/webview2.png"
+            alt="wallet1"
+          />
         </div>
       </section>
     </>
