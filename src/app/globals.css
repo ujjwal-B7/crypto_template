@@ -65,7 +65,7 @@ h2{
     letter-spacing: -.01em;
     margin-top: 0;
     margin-bottom: 10px;
-    font-size:clamp(20px,5vw,40px);
+    font-size:clamp(20px,5vw,45px);
     font-weight: 700;
     line-height: 1.212em;
 }
@@ -79,9 +79,9 @@ h4{
   line-height: 1.071em;
 }
 p{
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.625em;
-  font-weight: 400;
+  font-weight: 500;
 }
 .flex-between{
   display: flex;
@@ -97,6 +97,9 @@ p{
 }
 .primary-bg{
   background-color: var(--neutral-900);
+}
+.secondary-bg{
+  background-color: var(--primary-1);
 }
 .btn{
 background-color: var(--primary-1);

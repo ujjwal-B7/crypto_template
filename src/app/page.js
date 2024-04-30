@@ -16,7 +16,7 @@ export default function Home() {
           <h1 className="xs:mb-10 mb-5" data-aos="zoom-in">
             Buy and trade cryptos like never before
           </h1>
-          <p className="description" data-aos="zoom-in">
+          <p className="md:w-[75%]  md:mx-auto description" data-aos="zoom-in">
             Revolutionize crypto trading with our innovative platform.
             Experience seamless buying, selling, and trading like never before.
             Join us now!
@@ -340,8 +340,8 @@ export default function Home() {
                   height="22"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M25.1392 21.9889V2.74375e-05H42.7089V21.9889H25.1392Z"
                     fill="white"
                   />
@@ -367,8 +367,8 @@ export default function Home() {
                   height="23"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M17.9326 19.5718V41.5606H0.362871V19.5718H17.9326Z"
                     fill="white"
                   />
@@ -410,8 +410,8 @@ export default function Home() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M43.0642 12.4737H33.9445C29.7005 12.4811 26.2624 15.8333 26.2547 19.9713C26.249 24.1186 29.6909 27.4857 33.9445 27.4913H43.0719V28.1502C43.0719 35.3846 38.6862 39.6625 31.2645 39.6625H11.8094C4.38568 39.6625 0 35.3846 0 28.1502V12.3934C0 5.15898 4.38568 0.897827 11.8094 0.897827H31.2568C38.6786 0.897827 43.0642 5.15898 43.0642 12.3934V12.4737ZM10.2071 12.4568H22.3534H22.361H22.3764C23.2857 12.4531 24.0207 11.7307 24.0169 10.8423C24.0131 9.95572 23.2703 9.239 22.361 9.24273H10.2071C9.30356 9.24646 8.57038 9.96132 8.56655 10.8442C8.56272 11.7307 9.29781 12.4531 10.2071 12.4568Z"
                   fill="white"
                 />
@@ -476,17 +476,17 @@ export default function Home() {
                   d="M44.4507 9.70539C41.911 6.62916 38.4838 4.41163 34.637 3.35548C30.7903 2.29934 26.7113 2.45604 22.9568 3.80421C19.2024 5.15238 15.9555 7.62632 13.6593 10.8883C11.3631 14.1504 10.1296 18.0415 10.127 22.0306V27.323"
                   stroke="white"
                   stroke-opacity="0.4"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M16.2878 38.5601C18.9511 41.3822 22.4003 43.3398 26.1887 44.1794C29.9772 45.019 33.9305 44.702 37.5367 43.2694C41.1429 41.8367 44.236 39.3545 46.4155 36.1441C48.595 32.9336 49.7606 29.1428 49.7612 25.2624V21.7389"
                   stroke="white"
                   stroke-opacity="0.4"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M18.9008 18.655C18.8897 18.8672 18.8196 19.0733 18.6947 19.2522L10.4844 30.8834C10.2579 31.2029 9.88509 31.3855 9.49404 31.365C9.10299 31.3445 8.75131 31.1239 8.55946 30.7825L1.60989 18.3568C1.40847 17.9952 1.41802 17.5519 1.63859 17.2002C1.85773 16.8469 2.24992 16.6425 2.6637 16.6642L17.8236 17.4587C18.2374 17.4804 18.6061 17.7246 18.7871 18.0989C18.8736 18.2752 18.9107 18.4671 18.9008 18.655"
@@ -503,6 +503,132 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
               quia eum quo nam nihil ex.
             </p>
+          </div>
+        </div>
+        <div className="flex justify-center mt-5">
+          <Button
+            style={{ borderRadius: "2rem" }}
+            className={cn("btn px-10 py-5")}
+          >
+            DOWNLOAD APP
+          </Button>
+        </div>
+      </section>
+      <section className="section-container px-4 flex-between md:flex-row flex-col-reverse md:py-32 py-20 gap-10">
+        <div
+          className="flex  md:w-[50%] md:pl-10 p-10 relative"
+          data-aos="zoom-in"
+        >
+          <img
+            className="-rotate-12 lg:w-[45%] w-[50%]  object-contain"
+            src="/assets/wallet1.png"
+            alt="wallet1"
+          />
+          <img
+            className="rotate-6 lg:w-[45%] w-[50%] object-contain"
+            src="/assets/wallet2.png"
+            alt="wallet2"
+          />
+        </div>
+        <div className="md:w-[50%]">
+          <h2 data-aos="fade-up">A crypto wallet from the future</h2>
+          <p data-aos="fade-up">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit non
+            neque orci amet, amet consectetur eget suspendisse in. Adipiscing
+            vitae dignissim facilisi ut.
+          </p>
+          <div className="space-y-4 mt-10" data-aos="fade-up">
+            <div className="flex gap-5 items-center">
+              <span className="rounded-xl secondary-bg p-2">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.4"
+                    d="M22.8492 0H8.34839C3.06406 0 0.0700684 2.99399 0.0700684 8.27832V22.7654C0.0700684 28.0497 3.06406 31.0437 8.34839 31.0437H22.8492C28.1336 31.0437 31.1138 28.0497 31.1138 22.7654V8.27832C31.1138 2.99399 28.1336 0 22.8492 0"
+                    fill="white"
+                  />
+                  <path
+                    d="M24.9976 14.8947V20.5381H19.3542"
+                    stroke="white"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M24.9976 20.5381L18.3601 13.9006C18.2436 13.7841 18.1054 13.6916 17.9532 13.6285C17.801 13.5655 17.6378 13.533 17.4731 13.533C17.3083 13.533 17.1452 13.5655 16.993 13.6285C16.8407 13.6916 16.7025 13.7841 16.586 13.9006L13.9708 16.5158C13.8543 16.6323 13.7161 16.7248 13.5639 16.7878C13.4117 16.8509 13.2485 16.8834 13.0838 16.8834C12.919 16.8834 12.7559 16.8509 12.6037 16.7878C12.4514 16.7248 12.3132 16.6323 12.1967 16.5158L6.18628 10.5054"
+                    stroke="white"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <p>Lowest fees in market</p>
+            </div>
+            <div className="flex gap-5">
+              <span className="rounded-xl secondary-bg p-2">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 36 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="17.5917"
+                    cy="18.5217"
+                    r="17.5917"
+                    fill="white"
+                    fillOpacity="0.4"
+                  />
+                  <path
+                    d="M21.0348 7.65791C21.0348 7.21246 20.4962 6.98938 20.1813 7.30436L8.71102 18.7746C8.59059 18.8952 8.50859 19.0487 8.47539 19.2159C8.44218 19.383 8.45926 19.5563 8.52445 19.7137C8.58965 19.8712 8.70004 20.0058 8.84169 20.1005C8.98334 20.1953 9.14989 20.2459 9.32031 20.2461H13.6487C13.9248 20.2461 14.1487 20.47 14.1487 20.7461V29.3855C14.1487 29.8309 14.6872 30.054 15.0022 29.739L26.4725 18.2688C26.5929 18.1482 26.6749 17.9946 26.7081 17.8275C26.7413 17.6603 26.7242 17.4871 26.659 17.3296C26.5938 17.1722 26.4834 17.0376 26.3418 16.9428C26.2001 16.8481 26.0336 16.7974 25.8632 16.7973H21.5348C21.2587 16.7973 21.0348 16.5734 21.0348 16.2973V7.65791Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <p>Fast and secure transactions</p>
+            </div>
+            <div className="flex gap-5">
+              <span className="rounded-xl secondary-bg p-2">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 25 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.70862 12.568V8.34884C6.70862 6.78227 7.32846 5.27986 8.43178 4.17213C9.5351 3.0644 11.0315 2.44208 12.5919 2.44208C14.1522 2.44208 15.6486 3.0644 16.7519 4.17213C17.8553 5.27986 18.4751 6.78227 18.4751 8.34884V12.568"
+                    stroke="#A388EF"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <rect
+                    x="0.425781"
+                    y="11.2656"
+                    width="24.3322"
+                    height="21.3356"
+                    rx="4"
+                    fill="white"
+                  />
+                  <path
+                    d="M12.5918 21.4763C12.6822 21.4763 12.7706 21.5031 12.8458 21.5533C12.9209 21.6035 12.9795 21.6749 13.0141 21.7584C13.0487 21.8419 13.0578 21.9338 13.0401 22.0225C13.0225 22.1112 12.979 22.1926 12.915 22.2565C12.8511 22.3204 12.7697 22.364 12.681 22.3816C12.5923 22.3992 12.5004 22.3902 12.4169 22.3556C12.3334 22.321 12.262 22.2624 12.2118 22.1873C12.1616 22.1121 12.1348 22.0237 12.1348 21.9333C12.1348 21.8121 12.1829 21.6958 12.2686 21.6101C12.3544 21.5244 12.4706 21.4763 12.5918 21.4763"
+                    stroke="#A388EF"
+                    strokeWidth="4.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <p>256-bit secure encryption</p>
+            </div>
           </div>
         </div>
       </section>
