@@ -132,6 +132,7 @@ export default function Home() {
         <img
           className="absolute lg:bottom-16 bottom-0 w-[20%] lg:right-20 right-5"
           src="assets/mobileview.png"
+          alt="dashboard_mob"
         />
       </section>
       <section
@@ -482,7 +483,7 @@ export default function Home() {
               quia eum quo nam nihil ex.
             </p>
             <div className="pt-5 mx-auto max-w-80 rounded-xl -mb-72">
-              <img src="assets/cryptomobile.png" alt="" />
+              <img src="assets/cryptomobile.png" alt="crypto_mob" />
             </div>
           </div>
           <div className="crypto-card" data-aos="zoom-in">
@@ -843,9 +844,9 @@ export default function Home() {
             ]}
           >
             <CarouselContent className="md:w-[50%] mx-auto">
-              {carousel.map((review,index) => (
+              {carousel.map((review, index) => (
                 <CarouselItem
-                  key={index}
+                  key={review.name}
                   className="primary-bg rounded-3xl md:ml-10 ml-5 md:px-10 md:py-12 px-2 py-8"
                 >
                   <p className="tracking-wide">{review.review}</p>
