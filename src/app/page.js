@@ -843,8 +843,11 @@ export default function Home() {
             ]}
           >
             <CarouselContent className="md:w-[50%] mx-auto">
-              {carousel.map((review) => (
-                <CarouselItem className="primary-bg rounded-3xl md:ml-10 ml-5 md:px-10 md:py-12 px-2 py-8">
+              {carousel.map((review,index) => (
+                <CarouselItem
+                  key={index}
+                  className="primary-bg rounded-3xl md:ml-10 ml-5 md:px-10 md:py-12 px-2 py-8"
+                >
                   <p className="tracking-wide">{review.review}</p>
                   <div className="flex items-center gap-4 mt-5">
                     <div className="w-14 h-14 rounded-full relative">
@@ -874,6 +877,7 @@ export default function Home() {
           {latestnews.map((news) => (
             <Tilty>
               <div
+                key={news.title}
                 className="cursor-pointer sm:w-full w-[90%] mx-auto primary-bg rounded-2xl relative"
                 data-aos="zoom-in"
               >
