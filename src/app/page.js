@@ -1,10 +1,94 @@
 "use client";
 import Image from "next/image";
+import Tilty from "react-tilty";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+const carousel = [
+  {
+    image: "/assets/testimonial1.jpg",
+    name: "JOHN CARTER",
+    position: "VP OF FINANCE, FACEBOOK",
+    review:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in"',
+  },
+  {
+    image: "/assets/testimonial2.jpg",
+    name: "LILY WOODS",
+    position: "VP OF FINANCE, TWITTER",
+    review:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in"',
+  },
+  {
+    image: "/assets/testimonial3.jpg",
+    name: "SOPHIE MOORE",
+    position: "VP OF FINANCE, GOOGLE",
+    review:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in"',
+  },
+  {
+    image: "/assets/testimonial1.jpg",
+    name: "JOHN CARTER",
+    position: "VP OF FINANCE, FACEBOOK",
+    review:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in"',
+  },
+  {
+    image: "/assets/testimonial2.jpg",
+    name: "LILY WOODS",
+    position: "VP OF FINANCE, TWITTER",
+    review:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in"',
+  },
+  {
+    image: "/assets/testimonial3.jpg",
+    name: "SOPHIE MOORE",
+    position: "VP OF FINANCE, GOOGLE",
+    review:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo dolor fermentum dignissim et pellentesque egestas mauris, faucibus. Tellus nisi amet non at phasellus faucibus senectus in"',
+  },
+];
+
+const latestnews = [
+  {
+    authorImage: "/assets/autho1.jpeg",
+    productImage: "/assets/news1.jpeg",
+    name: "ALEX TURNER",
+    date: "SEPTEMBER 1, 2022",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sapiente? Sint quidem tempora amet nemo.",
+    title: "What is the best and most secure crypto wallet of 2021?",
+    type: "PRODUCT",
+  },
+  {
+    authorImage: "/assets/author2.jpeg",
+    productImage: "/assets/news2.jpeg",
+    name: "JOHN CARTER",
+    date: "SEPTEMBER 1, 2022",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sapiente? Sint quidem tempora amet nemo.",
+    title: "What is the best and most secure crypto wallet of 2021?",
+    type: "TUTORIAL",
+  },
+  {
+    authorImage: "/assets/testimonial3.jpg",
+    productImage: "/assets/news3.jpeg",
+    name: "SOPHIE MOORE",
+    date: "SEPTEMBER 1, 2022",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. In, sapiente? Sint quidem tempora amet nemo.",
+    title: "What is the best and most secure crypto wallet of 2021?",
+    type: "APPS",
+  },
+];
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -34,6 +118,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+
       <section
         className="section-container relative lg:p-16"
         data-aos="fade-up"
@@ -632,7 +717,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section-container px-4 flex-between md:flex-row flex-col gap-10">
+      <section className="section-container px-4 pb-20 flex-between md:flex-row flex-col gap-10">
         <div className="md:w-[50%]">
           <h2 data-aos="fade-up">Built on a robust and powerful platform</h2>
           <p data-aos="fade-up">
@@ -740,6 +825,86 @@ export default function Home() {
             src="/assets/webview2.png"
             alt="wallet1"
           />
+        </div>
+      </section>
+      <section className="section-container px-4 py-20">
+        <h2 className="pb-10 text-center">What our users say?</h2>
+        <div className="">
+          <Carousel
+            className="md:w-[90%] w-[75%] mx-auto"
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 2000,
+              }),
+            ]}
+          >
+            <CarouselContent className="md:w-[50%] mx-auto">
+              {carousel.map((review) => (
+                <CarouselItem className="primary-bg rounded-3xl md:ml-10 ml-5 md:px-10 md:py-12 px-2 py-8">
+                  <p className="tracking-wide">{review.review}</p>
+                  <div className="flex items-center gap-4 mt-5">
+                    <div className="w-14 h-14 rounded-full relative">
+                      <Image
+                        className="w-full h-full object-cover rounded-full"
+                        src={review.image}
+                        alt={review.name}
+                        fill
+                      />
+                    </div>
+                    <span>
+                      <h5 className="text-base font-bold">{review.name}</h5>
+                      <h5 className="text-sm opacity-80">{review.position}</h5>
+                    </span>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </section>
+      <section className="section-container px-4 py-20">
+        <h2 className="md:text-start text-center">Browse our latest news</h2>
+        <div className="grid gap-10 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10">
+          {latestnews.map((news) => (
+            <Tilty>
+              <div
+                className="cursor-pointer sm:w-full w-[90%] mx-auto primary-bg rounded-2xl relative"
+                data-aos="zoom-in"
+              >
+                <div className="w-full aspect-[5/3] relative rounded-tr-2xl rounded-tl-2xl overflow-clip">
+                  <Image src={news.productImage} fill alt={news.productImage} />
+                </div>
+                <p className="text-sm secondary-bg rounded-3xl px-3 py-1 w-fit -mt-4 absolute left-5">
+                  {news.type}
+                </p>
+                <div className="px-4 py-10">
+                  <h4 className="text-2xl">{news.title}</h4>
+                  <p className="tracking-wide pb-5">{news.desc}</p>
+                  <hr className="border-[#53516c]" />
+                  <div className="flex items-center gap-5 mt-5">
+                    <div className="w-16 h-16 rounded-full relative">
+                      <Image
+                        className="rounded-full"
+                        src={news.authorImage}
+                        fill
+                        alt={news.authorImage}
+                      />
+                    </div>
+                    <span className="-space-y-3">
+                      <h4 className="text-base">{news.name}</h4>
+                      <h5 className="text-sm">{news.date}</h5>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </Tilty>
+          ))}
         </div>
       </section>
     </>

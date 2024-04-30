@@ -61,7 +61,7 @@ const Nav = () => {
           <ul>
             <li>CART (0)</li>
           </ul>
-          <Button className={cn("btn px-4 py-4  md:block hidden")}>
+          <Button className={cn("btn px-4  md:block hidden")}>
             DOWNLOAD APP
           </Button>
           <div className="lg:hidden p-0.5 rounded-[0.3rem] bg-[#6639e4]">
