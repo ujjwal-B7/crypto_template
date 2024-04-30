@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 export default function Home() {
   useEffect(() => {
     AOS.init();
-  }, []);
+  });
   return (
     <>
       <main className="section-container h-[calc(100vh-7rem)] flex justify-center items-center">
