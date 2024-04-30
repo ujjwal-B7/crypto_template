@@ -57,13 +57,11 @@ const Nav = () => {
             </ul>
           </div>
         </div>
-        <div className="flex-between md:gap-7 gap-3">
+        <div className="flex items-center md:gap-7 gap-3">
           <ul>
             <li>CART (0)</li>
           </ul>
-          <Button className={cn("btn px-4  md:block hidden")}>
-            DOWNLOAD APP
-          </Button>
+          <Button className="btn px-4 py-4 md:block hidden">DOWNLOAD APP</Button>
           <div className="lg:hidden p-0.5 rounded-[0.3rem] bg-[#6639e4]">
             <span>
               <svg

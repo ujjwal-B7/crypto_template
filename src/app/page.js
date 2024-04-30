@@ -109,10 +109,8 @@ export default function Home() {
             className="mt-10 flex xs:flex-row flex-col justify-center gap-7"
             data-aos="fade-up"
           >
-            <Button className={cn("btn px-7 py-4")}>DOWNLOAD APP</Button>
-            <Button
-              className={cn("primary-bg rounded-3xl px-7 py-4 font-[600]")}
-            >
+            <Button className="btn px-7 py-4">DOWNLOAD APP</Button>
+            <Button className="primary-bg rounded-3xl px-7 py-4 font-[600]">
               VIEW PRICING
             </Button>
           </div>
@@ -875,10 +873,9 @@ export default function Home() {
       <section className="section-container px-4 py-20">
         <h2 className="md:text-start text-center">Browse our latest news</h2>
         <div className="grid gap-10 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10">
-          {latestnews.map((news,index) => (
-            <Tilty>
+          {latestnews.map((news, index) => (
+            <Tilty key={index}>
               <div
-                key={index}
                 className="cursor-pointer sm:w-full w-[90%] mx-auto primary-bg rounded-2xl relative"
                 data-aos="zoom-in"
               >
