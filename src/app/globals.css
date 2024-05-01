@@ -18,6 +18,7 @@
   --primary-2: #f66688;
   --secondary-1: #dfdcff;
 }
+
 ::-webkit-scrollbar{
   display: none;
 }

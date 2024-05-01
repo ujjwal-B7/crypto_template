@@ -196,6 +196,7 @@ const Footer = () => {
                   src="https://assets-global.website-files.com/5f8f28722b0eae892596eb35/5fb300ea33c708602922c729_icon-app-2-crypto-template.svg"
                   width={20}
                   height={20}
+                  alt="appicon"
                 />
                 <span>APP STORE</span>
               </Button>
@@ -204,6 +205,7 @@ const Footer = () => {
                   src="https://assets-global.website-files.com/5f8f28722b0eae892596eb35/5fb300ea0ee0085f1deb6fcf_icon-app-1-crypto-template.svg"
                   width={20}
                   height={20}
+                  alt="appicon"
                 />
                 <span>PLAY STORE</span>
               </Button>

@@ -122,7 +122,7 @@ export default function Home() {
         data-aos="fade-up"
       >
         <img
-          className="relative md:mt-16 mb-16"
+          className="relative lg:mt-16 mb-16"
           src="assets/webview.png"
           alt="dashboard_web"
         />
