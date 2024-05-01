@@ -101,6 +101,14 @@ p{
 .secondary-bg{
   background-color: var(--primary-1);
 }
+.social-icon-bg{
+  background-color: #9c97d380;
+  transition: 0.3s;
+}
+.social-icon-bg:hover{
+  background-color: var(--primary-1);
+
+}
 .btn{
 background-color: var(--primary-1);
 font-weight: 600;

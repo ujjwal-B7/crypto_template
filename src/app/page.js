@@ -122,23 +122,23 @@ export default function Home() {
         data-aos="fade-up"
       >
         <img
-          className="relative lg:my-0 mt-16 mb-10"
+          className="relative md:mt-16 mb-16"
           src="assets/webview.png"
           alt="dashboard_web"
         />
         <span></span>
         <img
-          className="absolute lg:bottom-16 bottom-0 w-[20%] lg:right-20 right-5"
+          className="absolute lg:bottom-32 bottom-0 w-[20%] lg:right-20 right-5"
           src="assets/mobileview.png"
           alt="dashboard_mob"
         />
       </section>
       <section
-        className="section-container text-center py-10 px-4 "
+        className="section-container text-center py-16 px-4 "
         data-aos="fade-up"
       >
         <h2>CRYPTO APP HAS BEEN FEATURED ON</h2>
-        <div className="companies md:pt-10 pt-5 flex-wrap flex  justify-center lg:gap-10 gap-5">
+        <div className="companies md:pt-16 pt-5 flex-wrap flex  justify-center lg:gap-10 gap-5">
           <span>
             <svg
               width="201"
@@ -391,7 +391,7 @@ export default function Home() {
           </span>
         </div>
       </section>
-      <section className="section-container  py-10 px-4 md:mt-20">
+      <section className="section-container  py-16 px-4 md:mt-20">
         <div className="text-center">
           <h2>More than a typical crypto wallet</h2>
           <p className="text-lg max-w-[35rem] mx-auto">
@@ -871,7 +871,7 @@ export default function Home() {
         </div>
       </section>
       <section className="section-container px-4 py-20">
-        <h2 className="md:text-start text-center">Browse our latest news</h2>
+        <h2 className="text-center">Browse our latest news</h2>
         <div className="grid gap-10 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10">
           {latestnews.map((news, index) => (
             <Tilty key={index}>

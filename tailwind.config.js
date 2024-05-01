@@ -70,6 +70,7 @@ module.exports = {
       },
       screens: {
         xs: "475px",
+        custom: "857px",
       },
     },
   },

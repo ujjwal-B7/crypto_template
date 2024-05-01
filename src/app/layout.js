@@ -4,6 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Crypto App",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
